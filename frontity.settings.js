@@ -1,45 +1,20 @@
 const settings = {
   "name": "wordpeess",
   "state": {
-    "frontity": {
+    "source": {
       "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "postTypes": [
+        {
+          type: "destinations",
+          endpoint: "destinations",
+          archive: "/destinations"
+        }
+      ]
     }
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
+      name: "my-first-theme"
     },
     {
       "name": "@frontity/wp-source",
